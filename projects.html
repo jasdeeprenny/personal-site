@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Site</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="projects.html" aria-current="page">PROJECTS</a></li>
+            <li><a href="experiences.html">EXPERIENCE</a></li>
+            <li><a href="index.html" class="accent">JASDEEP RENNY</a></li>
+            <li><a href="travel.html">TRAVEL</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        </nav>
+
+        <main>
+            <section class="page-header">
+                <h1>PROJECTS</h1>
+            </section>
+            <section class="projects">
+                
+                <!-- cards are wrapped in a-tag so that the entire card becomes 'clickable'-->
+                <a class="project-card" href="https://github.com/jasdeeprenny">
+                    <figure class="thumb">
+                        <img src="images/welding_thumbnail.png" alt="PoseArray in RViz of welding path">
+                    </figure>
+                    <div class="content">
+                        <h3>Welding Robot Path Planner</h3>
+                        <p>Developed a ROS2 Python vision system for an autonomous welding robot using Intel RealSense.</p>
+                        <p>An OpenCV point selector captures 2D pixel inputs and triggers a 3D welding path using point-cloud data via a 6-DoF pose array.</p>                        
+                        <ul class="tags">
+                            <li>ROS2</li><li>OpenCV</li><li>RealSense2 Camera</li><li>Python</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://github.com/jasdeeprenny">
+                    <figure class="thumb">
+                        <img src="images/jasgpt_thumbnail.jpg" alt="Chatgpt logo">
+                    </figure>
+                    <div class="content">
+                        <h3>JAS-GPT</h3>
+                        <p>I wanted to create an LLM from the beginning. My goal for this project is to simultaneously learn and develop an LLM by myself. There is only one constraint: I should understand everything that I implement.</p>
+                        <p>So far this is a simple decoder-only model which uses masked multi-head attention to generate responses. I have followed along the Karpathy makemore series to create this teeny tiny model.</p>                        
+                        <ul class="tags">
+                            <li>Python</li><li>PyTorch</li><li>LLM</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://github.com/jasdeeprenny">
+                    <figure class="thumb">
+                        <img src="images/microscope_remote.png" alt="Remote Controlled Microscope">
+                    </figure>
+                    <div class="content">
+                        <h3>Remote Controlled Microscope</h3>
+                        <p>Developed an embedded FreeRTOS-based control system for a remote-controlled microscope on the STM32F429ZI platform.</p>
+                        <p>Produced modular driver libraries to manage physical and digital command inputs, radio transmission to the microscope using the NRF24L01+ module, and display outputs to RGB LEDs and a seven-segment display.</p>
+                        
+                        <ul class="tags">
+                            <li>STM32</li><li>FreeRTOS</li><li>C</li><li>ARM Cortex-M4</li>
+                        </ul>
+                    </div>
+                </a>
+            </section>
+        </main>
+</body>

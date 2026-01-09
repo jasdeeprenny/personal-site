@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Site</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="experiences.html">EXPERIENCE</a></li>
+            <li><a href="index.html" class="accent">JASDEEP RENNY</a></li>
+            <li><a href="travel.html" aria-current="page">TRAVEL</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>TRAVEL</h1>
+        </section>
+
+        <section class="travel-map">
+            <div class="map-wrap">
+
+                <img src="images/world_map.jpg" alt="World map" class="map-img">
+            
+                <!-- Singapore -->
+                <!-- inline style attributes positions pin using left and top -->
+                <button class="map-pin"
+                        style="left: 78.84%; top: 49.25%;"
+                        data-title="Singapore"
+                        data-when="Aug-Nov 2025"
+                        data-highlights="Spent 4 months living in Singapore whilst studying exchange at NTU!"
+                        data-photos='["images/sg_nationalday.jpg"]'
+                        aria-label="Singapore pin">
+                    <span></span>   <!--just the visual button we see-->
+                </button>
+            
+                <!-- North Vietnam -->
+                <button class="map-pin"
+                        style="left: 79.16%; top: 37.32%;"
+                        data-title="Hanoi and Ha Giang, Vietnam"
+                        data-when="Dec 2025"
+                        data-highlights="Food tour in Hanoi and Ha Giang loop."
+                        data-photos='["images/hagiang.jpg","images/hanoi_food.jpg"]'
+                        aria-label="Hanoi and Ha Giang pin">
+                    <span></span>
+                </button>
+
+                <!-- Mount Rinjani -->
+                <button class="map-pin"
+                        style="left: 80.13%; top: 54.68%;"
+                        data-title="Mount Rinjani, Lombok"
+                        data-when="Oct 2025"
+                        data-highlights="Hiked the 2nd tallest volcano in Indonesia (3726m) over 3 days."
+                        data-photos='["images/rinjani_summit.jpg"]'
+                        aria-label="Mount Rinjani pin">
+                    <span></span>
+                </button>
+
+                <!-- Mount Rinjani -->
+                <button class="map-pin"
+                        style="left: 80.13%; top: 54.68%;"
+                        data-title="Mount Rinjani, Lombok"
+                        data-when="Oct 2025"
+                        data-highlights="Hiked the 2nd tallest volcano in Indonesia (3726m) over 3 days."
+                        data-photos='["images/rinjani_summit.jpg"]'
+                        aria-label="Mount Rinjani pin">
+                    <span></span>
+                </button>
+
+                <!-- Seoul -->
+                <button class="map-pin"
+                        style="left: 84.16%; top: 29.13%;"
+                        data-title="Seoul, South Korea"
+                        data-when="July 2025"
+                        data-highlights="Spent a week buying clothes, and eating gochujiang with my best mate."
+                        data-photos='["images/seoul.jpg"]'
+                        aria-label="Seoul pin">
+                    <span></span>
+                </button>
+
+                <!-- Taipei -->
+                <button class="map-pin"
+                        style="left: 83.76%; top: 36.08%;"
+                        data-title="Taipei, Taiwan"
+                        data-when="July 2025"
+                        data-highlights="Spent another week buying clothes, and eating, with my best mate."
+                        data-photos='["images/taipei.jpg"]'
+                        aria-label="Taipei pin">
+                    <span></span>
+                </button>
+
+                <!-- Bangkok -->
+                <button class="map-pin"
+                        style="left: 77.92%; top: 42.36%;"
+                        data-title="Bangkok, Thailand"
+                        data-when="Oct 2025"
+                        data-highlights="Visited temples, the Grand Palace, and watched my first Muay Thai match."
+                        data-photos='["images/bangkok.jpg"]'
+                        aria-label="Bangkok pin">
+                    <span></span>
+                </button>
+                </div>
+
+                <!-- Reusable Popup card -->
+                <div class="map-card" id="mapCard" hidden>
+                    <button class="card-close" aria-label="Close">&times;</button>
+                    <h3 id="cardTitle">Title</h3>
+                    <p class="card-when" id="cardWhen"></p>
+                    <p class="card-highlights" id="cardHighlights"></p>
+
+                    <div class="card-photos" id="cardPhotos">
+                    <!-- images are injected here from js-->
+                    </div>
+                </div>
+            
+        </section>
+        <script src="js/map.js" defer></script>     <!--tells browser to run js after html (for rendering purposes)-->
+    </main>
+</body>
