@@ -3,7 +3,7 @@
     "name": "personal-site-worker",
     "compatibility_date": "2025-12-31",
     "assets": {
-        "directory": "."
+        "directory": "./public"
     },
     "observability": {
         "enabled": true
